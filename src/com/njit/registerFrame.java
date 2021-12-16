@@ -83,10 +83,12 @@ public class registerFrame extends JFrame {
         remmond = new JTextArea(5, 10);
         scroll = new JScrollPane(remmond);
         cont1.add(scroll);
+
 //按钮
         JPanel cont2 = new JPanel(new GridLayout(1, 2));
         register = new JButton("注册");
         register.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent evt) {
 //registre事件处理
                 String pass = new String(password.getPassword());
